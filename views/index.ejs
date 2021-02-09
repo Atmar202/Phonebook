@@ -9,6 +9,8 @@
 </head>
 <body>
     <div class="box" id="heading">
+        <h1>Phonebook</h1>
+        <hr>
         <% for(let i = 0; i < contacts.length; i++) { %>
         <form action="/delete-contact" method="POST">
         <div class="item">
@@ -24,10 +26,12 @@
     </form>
     
 <% } %>
-
+<div id="button-add">
+<hr>
 <form action="/add-user" method="GET">
     <button id="add">» Add Contact «</button>
     </form>
+</div>
 </div>
 </body>
 </html>

@@ -1,7 +1,24 @@
 :root {
-    --blue-color: #43dbcf;
-    --light-blue:  #c0faf6;
+    --blue-color: #94db43;
+    --light-blue:  #c0fac5;
   
+  }
+
+  #add {
+    margin-left: 35.5rem;
+  }
+
+  #add, #arrow, i {
+    transition: 0.3s;
+  }
+  #add:hover {
+    background-color: #00204a;
+  }
+  #arrow:hover i {
+    color: red;
+  }
+  #arrow:hover {
+    background-color: var(--light-blue);
   }
   
   html {
@@ -17,16 +34,17 @@
     }
     
     .box {
-      max-width: 400px;
+      max-width: 300px;
       margin: 50px auto;
-      background: white;
-      border-radius: 5px;
+      background: #FFF;
+      border-radius: 10px;
       box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
     }
     
     #heading {
       background-color: var(--blue-color);
       text-align: center;
+      margin-bottom: -5px;
     }
     
     .item {
@@ -62,7 +80,7 @@
     margin-top: 1.5rem;
       min-height: 50px;
       width: 200px;
-      border-radius: 5%;
+      border-radius: 10px;
       border-color: transparent;
       background-color: var(--blue-color);
       color: #fff;
@@ -80,6 +98,11 @@
       font-size: 20px;
       font-weight: 200;
       width: 200px;
+    }
+
+    input::placeholder {
+      color: #FFF;
+      font-size: 22px;
     }
     
     input[type="text"]:focus {
